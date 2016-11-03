@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Sapir College International Syllabus</title>
+        <link rel="stylesheet" type="text/css" href="css/style2.css">
+		<!--<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>/-->
+		<script src="js/script.js"></script>
+    </head>
+	
+    
+    <body>
+		<h1>Test form</h1>
+		<form id="testForm" method="get" action="#">
+			<table border="1" width="100%">
+				<tr>
+					<td width="20%">
+						<ul>
+							<li class="weekdays"><input type="checkbox" class="weekday" id="weekday_sunday" onclick="OnChangeCheckbox(this)" value="sunday"/>sunday</li>
+							<li class="weekdays"><input type="checkbox" class="weekday" id="weekday_monday" onclick="OnChangeCheckbox(this)" value="monday">monday</li>
+							<li class="weekdays"><input type="checkbox" class="weekday" id="weekday_tuesday" onclick="OnChangeCheckbox(this)" value="tuesday">tuesday</li>
+							<li class="weekdays"><input type="checkbox" class="weekday" id="weekday_wednesday" onclick="OnChangeCheckbox(this)" value="wednesday">wednesday</li>
+							<li class="weekdays"><input type="checkbox" class="weekday" id="weekday_thursday" onclick="OnChangeCheckbox(this)" value="thursday">thursday</li>
+							<li class="weekdays"><input type="checkbox" class="weekday" id="weekday_friday" onclick="OnChangeCheckbox(this)" value="friday">friday</li>
+							
+							<!--<li class="weekdays"><input type="checkbox" class="weekday" id="weekday_sunday" onclick="toogleClass(this)" value="sunday"/>sunday</li>
+							<li class="weekdays"><input type="checkbox" class="weekday" id="weekday_monday" onclick="toogleClass(this)" value="monday">monday</li>
+							<li class="weekdays"><input type="checkbox" class="weekday" id="weekday_tuesday" onclick="toogleClass(this)" value="tuesday">tuesday</li>
+							<li class="weekdays"><input type="checkbox" class="weekday" id="weekday_wednesday" onclick="toogleClass(this)" value="wednesday">wednesday</li>
+							<li class="weekdays"><input type="checkbox" class="weekday" id="weekday_thursday" onclick="toogleClass(this)" value="thursday">thursday</li>
+							<li class="weekdays"><input type="checkbox" class="weekday" id="weekday_friday" onclick="toogleClass(this)" value="friday">friday</li>/-->
+						</ul>
+					</td>
+					<td width="80%">
+						<ul name="sunday" class="hiddy">
+							<li name="start" class="sunday" value="sunday">
+								<select>
+									<option value="">---</option>
+									<option value="08:00 am">08:00 am</option>
+									<option value="08:15 am">08:15 am</option>
+									<option value="08:30 am">08:30 am</option>
+									<option value="08:45 am">08:45 am</option>
+									<option value="09:00 am">09:00 am</option>
+									<option value="09:15 am">09:15 am</option>
+									<option value="09:30 am">09:30 am</option>
+									<option value="09:45 am">09:45 am</option>
+									<option value="10:00 am">10:00 am</option>
+									<option value="10:15 am">10:15 am</option>
+									<option value="10:30 am">10:30 am</option>
+									<option value="10:45 am">10:45 am</option>
+									<option value="11:00 am">11:00 am</option>
+									<option value="11:15 am">11:15 am</option>
+									<option value="11:30 am">11:30 am</option>
+									<option value="11:45 am">11:45 am</option>
+									<option value="12:00 pm">12:00 pm</option>
+									<option value="12:15 pm">12:15 pm</option>
+									<option value="12:30 pm">12:30 pm</option>
+									<option value="12:45 pm">12:45 pm</option>
+									<option value="01:00 pm">01:00 pm</option>
+									<option value="01:15 pm">01:15 pm</option>
+									<option value="01:30 pm">01:30 pm</option>
+									<option value="01:45 pm">01:45 pm</option>
+									<option value="02:00 pm">02:00 pm</option>
+									<option value="02:15 pm">02:15 pm</option>
+									<option value="02:30 pm">02:30 pm</option>
+									<option value="02:45 pm">02:45 pm</option>
+									<option value="03:00 pm">03:00 pm</option>
+									<option value="03:15 pm">03:15 pm</option>
+									<option value="03:30 pm">03:30 pm</option>
+									<option value="03:45 pm">03:45 pm</option>
+									<option value="04:00 pm">04:00 pm</option>
+									<option value="04:15 pm">04:15 pm</option>
+									<option value="04:30 pm">04:30 pm</option>
+									<option value="04:45 pm">04:45 pm</option>
+									<option value="05:00 pm">05:00 pm</option>
+									<option value="05:15 pm">05:15 pm</option>
+									<option value="05:30 pm">05:30 pm</option>
+									<option value="05:45 pm">05:45 pm</option>
+									<option value="06:00 pm">06:00 pm</option>
+									<option value="06:15 pm">06:15 pm</option>
+									<option value="06:30 pm">06:30 pm</option>
+									<option value="06:45 pm">06:45 pm</option>
+									<option value="07:00 pm">07:00 pm</option>
+									<option value="07:15 pm">07:15 pm</option>
+									<option value="07:30 pm">07:30 pm</option>
+									<option value="07:45 pm">07:45 pm</option>
+									<option value="08:00 pm">08:00 pm</option>
+								</select></li>
+							<li name="end" class="sunday" value="sunday">
+								<select>
+							<option value="">---</option>
+							<option value="08:45 am">08:45 am</option>
+							<option value="09:00 am">09:00 am</option>
+							<option value="09:15 am">09:15 am</option>
+							<option value="09:30 am">09:30 am</option>
+							<option value="09:45 am">09:45 am</option>
+							<option value="10:00 am">10:00 am</option>
+							<option value="10:15 am">10:15 am</option>
+							<option value="10:30 am">10:30 am</option>
+							<option value="10:45 am">10:45 am</option>
+							<option value="11:00 am">11:00 am</option>
+							<option value="11:15 am">11:15 am</option>
+							<option value="11:30 am">11:30 am</option>
+							<option value="11:45 am">11:45 am</option>
+							<option value="12:00 pm">12:00 pm</option>
+							<option value="12:15 pm">12:15 pm</option>
+							<option value="12:30 pm">12:30 pm</option>
+							<option value="12:45 pm">12:45 pm</option>
+							<option value="01:00 pm">01:00 pm</option>
+							<option value="01:15 pm">01:15 pm</option>
+							<option value="01:30 pm">01:30 pm</option>
+							<option value="01:45 pm">01:45 pm</option>
+							<option value="02:00 pm">02:00 pm</option>
+							<option value="02:15 pm">02:15 pm</option>
+							<option value="02:30 pm">02:30 pm</option>
+							<option value="02:45 pm">02:45 pm</option>
+							<option value="03:00 pm">03:00 pm</option>
+							<option value="03:15 pm">03:15 pm</option>
+							<option value="03:30 pm">03:30 pm</option>
+							<option value="03:45 pm">03:45 pm</option>
+							<option value="04:00 pm">04:00 pm</option>
+							<option value="04:15 pm">04:15 pm</option>
+							<option value="04:30 pm">04:30 pm</option>
+							<option value="04:45 pm">04:45 pm</option>
+							<option value="05:00 pm">05:00 pm</option>
+							<option value="05:15 pm">05:15 pm</option>
+							<option value="05:30 pm">05:30 pm</option>
+							<option value="05:45 pm">05:45 pm</option>
+							<option value="06:00 pm">06:00 pm</option>
+							<option value="06:15 pm">06:15 pm</option>
+							<option value="06:30 pm">06:30 pm</option>
+							<option value="06:45 pm">06:45 pm</option>
+							<option value="07:00 pm">07:00 pm</option>
+							<option value="07:15 pm">07:15 pm</option>
+							<option value="07:30 pm">07:30 pm</option>
+							<option value="07:45 pm">07:45 pm</option>
+							<option value="08:00 pm">08:00 pm</option>
+							<option value="08:15 pm">08:15 pm</option>
+							<option value="08:30 pm">08:30 pm</option>
+							<option value="08:45 pm">08:45 pm</option>
+						</select></li>
+							<li name="building" class="sunday" value="sunday"
+								<select>
+									<option value="">---</option>
+									<option value="cinema 1">Cinema 1</option>
+									<option value="handasaim">Operational Engineering 2</option>
+									<option value="library">Library 3</option>
+									<option value="student_house">Students House 4</option>
+									<option value="mechinot">Pre Academic 6</option>
+									<option value="academia8">Academic House 8</option>
+									<option value="academia9">Academic House 9</option>
+									<option value="academia10">Academic House 10</option>
+									<option value="academia11">Academic House 11</option>
+									<option value="academia12">Academic House 12</option>
+									<option value="saptech15">Externa Studies 15</option>
+								</select></li>
+						</ul>
+						<ul name="monday" class="hiddy">
+							<li name="start" class="monday" value="monday">
+								<select>
+									<option value="">---</option>
+									<option value="08:00 am">08:00 am</option>
+									<option value="08:15 am">08:15 am</option>
+									<option value="08:30 am">08:30 am</option>
+									<option value="08:45 am">08:45 am</option>
+									<option value="09:00 am">09:00 am</option>
+									<option value="09:15 am">09:15 am</option>
+									<option value="09:30 am">09:30 am</option>
+									<option value="09:45 am">09:45 am</option>
+									<option value="10:00 am">10:00 am</option>
+									<option value="10:15 am">10:15 am</option>
+									<option value="10:30 am">10:30 am</option>
+									<option value="10:45 am">10:45 am</option>
+									<option value="11:00 am">11:00 am</option>
+									<option value="11:15 am">11:15 am</option>
+									<option value="11:30 am">11:30 am</option>
+									<option value="11:45 am">11:45 am</option>
+									<option value="12:00 pm">12:00 pm</option>
+									<option value="12:15 pm">12:15 pm</option>
+									<option value="12:30 pm">12:30 pm</option>
+									<option value="12:45 pm">12:45 pm</option>
+									<option value="01:00 pm">01:00 pm</option>
+									<option value="01:15 pm">01:15 pm</option>
+									<option value="01:30 pm">01:30 pm</option>
+									<option value="01:45 pm">01:45 pm</option>
+									<option value="02:00 pm">02:00 pm</option>
+									<option value="02:15 pm">02:15 pm</option>
+									<option value="02:30 pm">02:30 pm</option>
+									<option value="02:45 pm">02:45 pm</option>
+									<option value="03:00 pm">03:00 pm</option>
+									<option value="03:15 pm">03:15 pm</option>
+									<option value="03:30 pm">03:30 pm</option>
+									<option value="03:45 pm">03:45 pm</option>
+									<option value="04:00 pm">04:00 pm</option>
+									<option value="04:15 pm">04:15 pm</option>
+									<option value="04:30 pm">04:30 pm</option>
+									<option value="04:45 pm">04:45 pm</option>
+									<option value="05:00 pm">05:00 pm</option>
+									<option value="05:15 pm">05:15 pm</option>
+									<option value="05:30 pm">05:30 pm</option>
+									<option value="05:45 pm">05:45 pm</option>
+									<option value="06:00 pm">06:00 pm</option>
+									<option value="06:15 pm">06:15 pm</option>
+									<option value="06:30 pm">06:30 pm</option>
+									<option value="06:45 pm">06:45 pm</option>
+									<option value="07:00 pm">07:00 pm</option>
+									<option value="07:15 pm">07:15 pm</option>
+									<option value="07:30 pm">07:30 pm</option>
+									<option value="07:45 pm">07:45 pm</option>
+									<option value="08:00 pm">08:00 pm</option>
+								</select></li>
+							<li name="end" class="monday" value="monday">
+								<select>
+							<option value="">---</option>
+							<option value="08:45 am">08:45 am</option>
+							<option value="09:00 am">09:00 am</option>
+							<option value="09:15 am">09:15 am</option>
+							<option value="09:30 am">09:30 am</option>
+							<option value="09:45 am">09:45 am</option>
+							<option value="10:00 am">10:00 am</option>
+							<option value="10:15 am">10:15 am</option>
+							<option value="10:30 am">10:30 am</option>
+							<option value="10:45 am">10:45 am</option>
+							<option value="11:00 am">11:00 am</option>
+							<option value="11:15 am">11:15 am</option>
+							<option value="11:30 am">11:30 am</option>
+							<option value="11:45 am">11:45 am</option>
+							<option value="12:00 pm">12:00 pm</option>
+							<option value="12:15 pm">12:15 pm</option>
+							<option value="12:30 pm">12:30 pm</option>
+							<option value="12:45 pm">12:45 pm</option>
+							<option value="01:00 pm">01:00 pm</option>
+							<option value="01:15 pm">01:15 pm</option>
+							<option value="01:30 pm">01:30 pm</option>
+							<option value="01:45 pm">01:45 pm</option>
+							<option value="02:00 pm">02:00 pm</option>
+							<option value="02:15 pm">02:15 pm</option>
+							<option value="02:30 pm">02:30 pm</option>
+							<option value="02:45 pm">02:45 pm</option>
+							<option value="03:00 pm">03:00 pm</option>
+							<option value="03:15 pm">03:15 pm</option>
+							<option value="03:30 pm">03:30 pm</option>
+							<option value="03:45 pm">03:45 pm</option>
+							<option value="04:00 pm">04:00 pm</option>
+							<option value="04:15 pm">04:15 pm</option>
+							<option value="04:30 pm">04:30 pm</option>
+							<option value="04:45 pm">04:45 pm</option>
+							<option value="05:00 pm">05:00 pm</option>
+							<option value="05:15 pm">05:15 pm</option>
+							<option value="05:30 pm">05:30 pm</option>
+							<option value="05:45 pm">05:45 pm</option>
+							<option value="06:00 pm">06:00 pm</option>
+							<option value="06:15 pm">06:15 pm</option>
+							<option value="06:30 pm">06:30 pm</option>
+							<option value="06:45 pm">06:45 pm</option>
+							<option value="07:00 pm">07:00 pm</option>
+							<option value="07:15 pm">07:15 pm</option>
+							<option value="07:30 pm">07:30 pm</option>
+							<option value="07:45 pm">07:45 pm</option>
+							<option value="08:00 pm">08:00 pm</option>
+							<option value="08:15 pm">08:15 pm</option>
+							<option value="08:30 pm">08:30 pm</option>
+							<option value="08:45 pm">08:45 pm</option>
+						</select></li>
+							<li name="building" class="monday" value="monday">
+								<select>
+									<option value="">---</option>
+									<option value="cinema 1">Cinema 1</option>
+									<option value="handasaim">Operational Engineering 2</option>
+									<option value="library">Library 3</option>
+									<option value="student_house">Students House 4</option>
+									<option value="mechinot">Pre Academic 6</option>
+									<option value="academia8">Academic House 8</option>
+									<option value="academia9">Academic House 9</option>
+									<option value="academia10">Academic House 10</option>
+									<option value="academia11">Academic House 11</option>
+									<option value="academia12">Academic House 12</option>
+									<option value="saptech15">Externa Studies 15</option>
+								</select></li>
+						</ul>
+						<ul name="tuesday" class="hiddy">
+							<li name="start" class="tuesday" value="tuesday">
+								<select>
+									<option value="">---</option>
+									<option value="08:00 am">08:00 am</option>
+									<option value="08:15 am">08:15 am</option>
+									<option value="08:30 am">08:30 am</option>
+									<option value="08:45 am">08:45 am</option>
+									<option value="09:00 am">09:00 am</option>
+									<option value="09:15 am">09:15 am</option>
+									<option value="09:30 am">09:30 am</option>
+									<option value="09:45 am">09:45 am</option>
+									<option value="10:00 am">10:00 am</option>
+									<option value="10:15 am">10:15 am</option>
+									<option value="10:30 am">10:30 am</option>
+									<option value="10:45 am">10:45 am</option>
+									<option value="11:00 am">11:00 am</option>
+									<option value="11:15 am">11:15 am</option>
+									<option value="11:30 am">11:30 am</option>
+									<option value="11:45 am">11:45 am</option>
+									<option value="12:00 pm">12:00 pm</option>
+									<option value="12:15 pm">12:15 pm</option>
+									<option value="12:30 pm">12:30 pm</option>
+									<option value="12:45 pm">12:45 pm</option>
+									<option value="01:00 pm">01:00 pm</option>
+									<option value="01:15 pm">01:15 pm</option>
+									<option value="01:30 pm">01:30 pm</option>
+									<option value="01:45 pm">01:45 pm</option>
+									<option value="02:00 pm">02:00 pm</option>
+									<option value="02:15 pm">02:15 pm</option>
+									<option value="02:30 pm">02:30 pm</option>
+									<option value="02:45 pm">02:45 pm</option>
+									<option value="03:00 pm">03:00 pm</option>
+									<option value="03:15 pm">03:15 pm</option>
+									<option value="03:30 pm">03:30 pm</option>
+									<option value="03:45 pm">03:45 pm</option>
+									<option value="04:00 pm">04:00 pm</option>
+									<option value="04:15 pm">04:15 pm</option>
+									<option value="04:30 pm">04:30 pm</option>
+									<option value="04:45 pm">04:45 pm</option>
+									<option value="05:00 pm">05:00 pm</option>
+									<option value="05:15 pm">05:15 pm</option>
+									<option value="05:30 pm">05:30 pm</option>
+									<option value="05:45 pm">05:45 pm</option>
+									<option value="06:00 pm">06:00 pm</option>
+									<option value="06:15 pm">06:15 pm</option>
+									<option value="06:30 pm">06:30 pm</option>
+									<option value="06:45 pm">06:45 pm</option>
+									<option value="07:00 pm">07:00 pm</option>
+									<option value="07:15 pm">07:15 pm</option>
+									<option value="07:30 pm">07:30 pm</option>
+									<option value="07:45 pm">07:45 pm</option>
+									<option value="08:00 pm">08:00 pm</option>
+								</select></li>
+							<li name="end" class="tuesday" value="tuesday">
+								<select>
+							<option value="">---</option>
+							<option value="08:45 am">08:45 am</option>
+							<option value="09:00 am">09:00 am</option>
+							<option value="09:15 am">09:15 am</option>
+							<option value="09:30 am">09:30 am</option>
+							<option value="09:45 am">09:45 am</option>
+							<option value="10:00 am">10:00 am</option>
+							<option value="10:15 am">10:15 am</option>
+							<option value="10:30 am">10:30 am</option>
+							<option value="10:45 am">10:45 am</option>
+							<option value="11:00 am">11:00 am</option>
+							<option value="11:15 am">11:15 am</option>
+							<option value="11:30 am">11:30 am</option>
+							<option value="11:45 am">11:45 am</option>
+							<option value="12:00 pm">12:00 pm</option>
+							<option value="12:15 pm">12:15 pm</option>
+							<option value="12:30 pm">12:30 pm</option>
+							<option value="12:45 pm">12:45 pm</option>
+							<option value="01:00 pm">01:00 pm</option>
+							<option value="01:15 pm">01:15 pm</option>
+							<option value="01:30 pm">01:30 pm</option>
+							<option value="01:45 pm">01:45 pm</option>
+							<option value="02:00 pm">02:00 pm</option>
+							<option value="02:15 pm">02:15 pm</option>
+							<option value="02:30 pm">02:30 pm</option>
+							<option value="02:45 pm">02:45 pm</option>
+							<option value="03:00 pm">03:00 pm</option>
+							<option value="03:15 pm">03:15 pm</option>
+							<option value="03:30 pm">03:30 pm</option>
+							<option value="03:45 pm">03:45 pm</option>
+							<option value="04:00 pm">04:00 pm</option>
+							<option value="04:15 pm">04:15 pm</option>
+							<option value="04:30 pm">04:30 pm</option>
+							<option value="04:45 pm">04:45 pm</option>
+							<option value="05:00 pm">05:00 pm</option>
+							<option value="05:15 pm">05:15 pm</option>
+							<option value="05:30 pm">05:30 pm</option>
+							<option value="05:45 pm">05:45 pm</option>
+							<option value="06:00 pm">06:00 pm</option>
+							<option value="06:15 pm">06:15 pm</option>
+							<option value="06:30 pm">06:30 pm</option>
+							<option value="06:45 pm">06:45 pm</option>
+							<option value="07:00 pm">07:00 pm</option>
+							<option value="07:15 pm">07:15 pm</option>
+							<option value="07:30 pm">07:30 pm</option>
+							<option value="07:45 pm">07:45 pm</option>
+							<option value="08:00 pm">08:00 pm</option>
+							<option value="08:15 pm">08:15 pm</option>
+							<option value="08:30 pm">08:30 pm</option>
+							<option value="08:45 pm">08:45 pm</option>
+						</select></li>
+							<li name="building" class="tuesday" value="tuesday">
+								<select>
+									<option value="">---</option>
+									<option value="cinema 1">Cinema 1</option>
+									<option value="handasaim">Operational Engineering 2</option>
+									<option value="library">Library 3</option>
+									<option value="student_house">Students House 4</option>
+									<option value="mechinot">Pre Academic 6</option>
+									<option value="academia8">Academic House 8</option>
+									<option value="academia9">Academic House 9</option>
+									<option value="academia10">Academic House 10</option>
+									<option value="academia11">Academic House 11</option>
+									<option value="academia12">Academic House 12</option>
+									<option value="saptech15">Externa Studies 15</option>
+								</select></li>
+						</ul>
+						<ul name="wednesday" class="hiddy">
+							<li name="start" class="wednesday" value="wednesday">
+								<select>
+									<option value="">---</option>
+									<option value="08:00 am">08:00 am</option>
+									<option value="08:15 am">08:15 am</option>
+									<option value="08:30 am">08:30 am</option>
+									<option value="08:45 am">08:45 am</option>
+									<option value="09:00 am">09:00 am</option>
+									<option value="09:15 am">09:15 am</option>
+									<option value="09:30 am">09:30 am</option>
+									<option value="09:45 am">09:45 am</option>
+									<option value="10:00 am">10:00 am</option>
+									<option value="10:15 am">10:15 am</option>
+									<option value="10:30 am">10:30 am</option>
+									<option value="10:45 am">10:45 am</option>
+									<option value="11:00 am">11:00 am</option>
+									<option value="11:15 am">11:15 am</option>
+									<option value="11:30 am">11:30 am</option>
+									<option value="11:45 am">11:45 am</option>
+									<option value="12:00 pm">12:00 pm</option>
+									<option value="12:15 pm">12:15 pm</option>
+									<option value="12:30 pm">12:30 pm</option>
+									<option value="12:45 pm">12:45 pm</option>
+									<option value="01:00 pm">01:00 pm</option>
+									<option value="01:15 pm">01:15 pm</option>
+									<option value="01:30 pm">01:30 pm</option>
+									<option value="01:45 pm">01:45 pm</option>
+									<option value="02:00 pm">02:00 pm</option>
+									<option value="02:15 pm">02:15 pm</option>
+									<option value="02:30 pm">02:30 pm</option>
+									<option value="02:45 pm">02:45 pm</option>
+									<option value="03:00 pm">03:00 pm</option>
+									<option value="03:15 pm">03:15 pm</option>
+									<option value="03:30 pm">03:30 pm</option>
+									<option value="03:45 pm">03:45 pm</option>
+									<option value="04:00 pm">04:00 pm</option>
+									<option value="04:15 pm">04:15 pm</option>
+									<option value="04:30 pm">04:30 pm</option>
+									<option value="04:45 pm">04:45 pm</option>
+									<option value="05:00 pm">05:00 pm</option>
+									<option value="05:15 pm">05:15 pm</option>
+									<option value="05:30 pm">05:30 pm</option>
+									<option value="05:45 pm">05:45 pm</option>
+									<option value="06:00 pm">06:00 pm</option>
+									<option value="06:15 pm">06:15 pm</option>
+									<option value="06:30 pm">06:30 pm</option>
+									<option value="06:45 pm">06:45 pm</option>
+									<option value="07:00 pm">07:00 pm</option>
+									<option value="07:15 pm">07:15 pm</option>
+									<option value="07:30 pm">07:30 pm</option>
+									<option value="07:45 pm">07:45 pm</option>
+									<option value="08:00 pm">08:00 pm</option>
+								</select></li>
+							<li name="end" class="wednesday" value="wednesday">
+								<select>
+							<option value="">---</option>
+							<option value="08:45 am">08:45 am</option>
+							<option value="09:00 am">09:00 am</option>
+							<option value="09:15 am">09:15 am</option>
+							<option value="09:30 am">09:30 am</option>
+							<option value="09:45 am">09:45 am</option>
+							<option value="10:00 am">10:00 am</option>
+							<option value="10:15 am">10:15 am</option>
+							<option value="10:30 am">10:30 am</option>
+							<option value="10:45 am">10:45 am</option>
+							<option value="11:00 am">11:00 am</option>
+							<option value="11:15 am">11:15 am</option>
+							<option value="11:30 am">11:30 am</option>
+							<option value="11:45 am">11:45 am</option>
+							<option value="12:00 pm">12:00 pm</option>
+							<option value="12:15 pm">12:15 pm</option>
+							<option value="12:30 pm">12:30 pm</option>
+							<option value="12:45 pm">12:45 pm</option>
+							<option value="01:00 pm">01:00 pm</option>
+							<option value="01:15 pm">01:15 pm</option>
+							<option value="01:30 pm">01:30 pm</option>
+							<option value="01:45 pm">01:45 pm</option>
+							<option value="02:00 pm">02:00 pm</option>
+							<option value="02:15 pm">02:15 pm</option>
+							<option value="02:30 pm">02:30 pm</option>
+							<option value="02:45 pm">02:45 pm</option>
+							<option value="03:00 pm">03:00 pm</option>
+							<option value="03:15 pm">03:15 pm</option>
+							<option value="03:30 pm">03:30 pm</option>
+							<option value="03:45 pm">03:45 pm</option>
+							<option value="04:00 pm">04:00 pm</option>
+							<option value="04:15 pm">04:15 pm</option>
+							<option value="04:30 pm">04:30 pm</option>
+							<option value="04:45 pm">04:45 pm</option>
+							<option value="05:00 pm">05:00 pm</option>
+							<option value="05:15 pm">05:15 pm</option>
+							<option value="05:30 pm">05:30 pm</option>
+							<option value="05:45 pm">05:45 pm</option>
+							<option value="06:00 pm">06:00 pm</option>
+							<option value="06:15 pm">06:15 pm</option>
+							<option value="06:30 pm">06:30 pm</option>
+							<option value="06:45 pm">06:45 pm</option>
+							<option value="07:00 pm">07:00 pm</option>
+							<option value="07:15 pm">07:15 pm</option>
+							<option value="07:30 pm">07:30 pm</option>
+							<option value="07:45 pm">07:45 pm</option>
+							<option value="08:00 pm">08:00 pm</option>
+							<option value="08:15 pm">08:15 pm</option>
+							<option value="08:30 pm">08:30 pm</option>
+							<option value="08:45 pm">08:45 pm</option>
+						</select></li>
+							<li name="building" class="wednesday" value="wednesday">
+								<select>
+									<option value="">---</option>
+									<option value="cinema 1">Cinema 1</option>
+									<option value="handasaim">Operational Engineering 2</option>
+									<option value="library">Library 3</option>
+									<option value="student_house">Students House 4</option>
+									<option value="mechinot">Pre Academic 6</option>
+									<option value="academia8">Academic House 8</option>
+									<option value="academia9">Academic House 9</option>
+									<option value="academia10">Academic House 10</option>
+									<option value="academia11">Academic House 11</option>
+									<option value="academia12">Academic House 12</option>
+									<option value="saptech15">Externa Studies 15</option>
+								</select></li>
+						</ul>
+						<ul name="thursday" class="hiddy">
+							<li name="start" class="thursday" value="thursday">
+								<select>
+									<option value="">---</option>
+									<option value="08:00 am">08:00 am</option>
+									<option value="08:15 am">08:15 am</option>
+									<option value="08:30 am">08:30 am</option>
+									<option value="08:45 am">08:45 am</option>
+									<option value="09:00 am">09:00 am</option>
+									<option value="09:15 am">09:15 am</option>
+									<option value="09:30 am">09:30 am</option>
+									<option value="09:45 am">09:45 am</option>
+									<option value="10:00 am">10:00 am</option>
+									<option value="10:15 am">10:15 am</option>
+									<option value="10:30 am">10:30 am</option>
+									<option value="10:45 am">10:45 am</option>
+									<option value="11:00 am">11:00 am</option>
+									<option value="11:15 am">11:15 am</option>
+									<option value="11:30 am">11:30 am</option>
+									<option value="11:45 am">11:45 am</option>
+									<option value="12:00 pm">12:00 pm</option>
+									<option value="12:15 pm">12:15 pm</option>
+									<option value="12:30 pm">12:30 pm</option>
+									<option value="12:45 pm">12:45 pm</option>
+									<option value="01:00 pm">01:00 pm</option>
+									<option value="01:15 pm">01:15 pm</option>
+									<option value="01:30 pm">01:30 pm</option>
+									<option value="01:45 pm">01:45 pm</option>
+									<option value="02:00 pm">02:00 pm</option>
+									<option value="02:15 pm">02:15 pm</option>
+									<option value="02:30 pm">02:30 pm</option>
+									<option value="02:45 pm">02:45 pm</option>
+									<option value="03:00 pm">03:00 pm</option>
+									<option value="03:15 pm">03:15 pm</option>
+									<option value="03:30 pm">03:30 pm</option>
+									<option value="03:45 pm">03:45 pm</option>
+									<option value="04:00 pm">04:00 pm</option>
+									<option value="04:15 pm">04:15 pm</option>
+									<option value="04:30 pm">04:30 pm</option>
+									<option value="04:45 pm">04:45 pm</option>
+									<option value="05:00 pm">05:00 pm</option>
+									<option value="05:15 pm">05:15 pm</option>
+									<option value="05:30 pm">05:30 pm</option>
+									<option value="05:45 pm">05:45 pm</option>
+									<option value="06:00 pm">06:00 pm</option>
+									<option value="06:15 pm">06:15 pm</option>
+									<option value="06:30 pm">06:30 pm</option>
+									<option value="06:45 pm">06:45 pm</option>
+									<option value="07:00 pm">07:00 pm</option>
+									<option value="07:15 pm">07:15 pm</option>
+									<option value="07:30 pm">07:30 pm</option>
+									<option value="07:45 pm">07:45 pm</option>
+									<option value="08:00 pm">08:00 pm</option>
+								</select></li>
+							<li name="end" class="thursday" value="thursday">
+								<select>
+							<option value="">---</option>
+							<option value="08:45 am">08:45 am</option>
+							<option value="09:00 am">09:00 am</option>
+							<option value="09:15 am">09:15 am</option>
+							<option value="09:30 am">09:30 am</option>
+							<option value="09:45 am">09:45 am</option>
+							<option value="10:00 am">10:00 am</option>
+							<option value="10:15 am">10:15 am</option>
+							<option value="10:30 am">10:30 am</option>
+							<option value="10:45 am">10:45 am</option>
+							<option value="11:00 am">11:00 am</option>
+							<option value="11:15 am">11:15 am</option>
+							<option value="11:30 am">11:30 am</option>
+							<option value="11:45 am">11:45 am</option>
+							<option value="12:00 pm">12:00 pm</option>
+							<option value="12:15 pm">12:15 pm</option>
+							<option value="12:30 pm">12:30 pm</option>
+							<option value="12:45 pm">12:45 pm</option>
+							<option value="01:00 pm">01:00 pm</option>
+							<option value="01:15 pm">01:15 pm</option>
+							<option value="01:30 pm">01:30 pm</option>
+							<option value="01:45 pm">01:45 pm</option>
+							<option value="02:00 pm">02:00 pm</option>
+							<option value="02:15 pm">02:15 pm</option>
+							<option value="02:30 pm">02:30 pm</option>
+							<option value="02:45 pm">02:45 pm</option>
+							<option value="03:00 pm">03:00 pm</option>
+							<option value="03:15 pm">03:15 pm</option>
+							<option value="03:30 pm">03:30 pm</option>
+							<option value="03:45 pm">03:45 pm</option>
+							<option value="04:00 pm">04:00 pm</option>
+							<option value="04:15 pm">04:15 pm</option>
+							<option value="04:30 pm">04:30 pm</option>
+							<option value="04:45 pm">04:45 pm</option>
+							<option value="05:00 pm">05:00 pm</option>
+							<option value="05:15 pm">05:15 pm</option>
+							<option value="05:30 pm">05:30 pm</option>
+							<option value="05:45 pm">05:45 pm</option>
+							<option value="06:00 pm">06:00 pm</option>
+							<option value="06:15 pm">06:15 pm</option>
+							<option value="06:30 pm">06:30 pm</option>
+							<option value="06:45 pm">06:45 pm</option>
+							<option value="07:00 pm">07:00 pm</option>
+							<option value="07:15 pm">07:15 pm</option>
+							<option value="07:30 pm">07:30 pm</option>
+							<option value="07:45 pm">07:45 pm</option>
+							<option value="08:00 pm">08:00 pm</option>
+							<option value="08:15 pm">08:15 pm</option>
+							<option value="08:30 pm">08:30 pm</option>
+							<option value="08:45 pm">08:45 pm</option>
+						</select></li>
+							<li name="building" class="thursday" value="thursday">
+								<select>
+									<option value="">---</option>
+									<option value="cinema 1">Cinema 1</option>
+									<option value="handasaim">Operational Engineering 2</option>
+									<option value="library">Library 3</option>
+									<option value="student_house">Students House 4</option>
+									<option value="mechinot">Pre Academic 6</option>
+									<option value="academia8">Academic House 8</option>
+									<option value="academia9">Academic House 9</option>
+									<option value="academia10">Academic House 10</option>
+									<option value="academia11">Academic House 11</option>
+									<option value="academia12">Academic House 12</option>
+									<option value="saptech15">Externa Studies 15</option>
+								</select></li>
+						</ul>
+						<ul name="friday" class="hiddy">
+							<li name="start" class="friday" value="friday">
+								<select>
+									<option value="">---</option>
+									<option value="08:00 am">08:00 am</option>
+									<option value="08:15 am">08:15 am</option>
+									<option value="08:30 am">08:30 am</option>
+									<option value="08:45 am">08:45 am</option>
+									<option value="09:00 am">09:00 am</option>
+									<option value="09:15 am">09:15 am</option>
+									<option value="09:30 am">09:30 am</option>
+									<option value="09:45 am">09:45 am</option>
+									<option value="10:00 am">10:00 am</option>
+									<option value="10:15 am">10:15 am</option>
+									<option value="10:30 am">10:30 am</option>
+									<option value="10:45 am">10:45 am</option>
+									<option value="11:00 am">11:00 am</option>
+									<option value="11:15 am">11:15 am</option>
+									<option value="11:30 am">11:30 am</option>
+									<option value="11:45 am">11:45 am</option>
+									<option value="12:00 pm">12:00 pm</option>
+									<option value="12:15 pm">12:15 pm</option>
+									<option value="12:30 pm">12:30 pm</option>
+									<option value="12:45 pm">12:45 pm</option>
+									<option value="01:00 pm">01:00 pm</option>
+									<option value="01:15 pm">01:15 pm</option>
+									<option value="01:30 pm">01:30 pm</option>
+									<option value="01:45 pm">01:45 pm</option>
+									<option value="02:00 pm">02:00 pm</option>
+									<option value="02:15 pm">02:15 pm</option>
+									<option value="02:30 pm">02:30 pm</option>
+									<option value="02:45 pm">02:45 pm</option>
+									<option value="03:00 pm">03:00 pm</option>
+									<option value="03:15 pm">03:15 pm</option>
+									<option value="03:30 pm">03:30 pm</option>
+									<option value="03:45 pm">03:45 pm</option>
+									<option value="04:00 pm">04:00 pm</option>
+									<option value="04:15 pm">04:15 pm</option>
+									<option value="04:30 pm">04:30 pm</option>
+									<option value="04:45 pm">04:45 pm</option>
+									<option value="05:00 pm">05:00 pm</option>
+									<option value="05:15 pm">05:15 pm</option>
+									<option value="05:30 pm">05:30 pm</option>
+									<option value="05:45 pm">05:45 pm</option>
+									<option value="06:00 pm">06:00 pm</option>
+									<option value="06:15 pm">06:15 pm</option>
+									<option value="06:30 pm">06:30 pm</option>
+									<option value="06:45 pm">06:45 pm</option>
+									<option value="07:00 pm">07:00 pm</option>
+									<option value="07:15 pm">07:15 pm</option>
+									<option value="07:30 pm">07:30 pm</option>
+									<option value="07:45 pm">07:45 pm</option>
+									<option value="08:00 pm">08:00 pm</option>
+								</select></li>
+							<li name="end" class="friday" value="friday">
+								<select>
+							<option value="">---</option>
+							<option value="08:45 am">08:45 am</option>
+							<option value="09:00 am">09:00 am</option>
+							<option value="09:15 am">09:15 am</option>
+							<option value="09:30 am">09:30 am</option>
+							<option value="09:45 am">09:45 am</option>
+							<option value="10:00 am">10:00 am</option>
+							<option value="10:15 am">10:15 am</option>
+							<option value="10:30 am">10:30 am</option>
+							<option value="10:45 am">10:45 am</option>
+							<option value="11:00 am">11:00 am</option>
+							<option value="11:15 am">11:15 am</option>
+							<option value="11:30 am">11:30 am</option>
+							<option value="11:45 am">11:45 am</option>
+							<option value="12:00 pm">12:00 pm</option>
+							<option value="12:15 pm">12:15 pm</option>
+							<option value="12:30 pm">12:30 pm</option>
+							<option value="12:45 pm">12:45 pm</option>
+							<option value="01:00 pm">01:00 pm</option>
+							<option value="01:15 pm">01:15 pm</option>
+							<option value="01:30 pm">01:30 pm</option>
+							<option value="01:45 pm">01:45 pm</option>
+							<option value="02:00 pm">02:00 pm</option>
+							<option value="02:15 pm">02:15 pm</option>
+							<option value="02:30 pm">02:30 pm</option>
+							<option value="02:45 pm">02:45 pm</option>
+							<option value="03:00 pm">03:00 pm</option>
+							<option value="03:15 pm">03:15 pm</option>
+							<option value="03:30 pm">03:30 pm</option>
+							<option value="03:45 pm">03:45 pm</option>
+							<option value="04:00 pm">04:00 pm</option>
+							<option value="04:15 pm">04:15 pm</option>
+							<option value="04:30 pm">04:30 pm</option>
+							<option value="04:45 pm">04:45 pm</option>
+							<option value="05:00 pm">05:00 pm</option>
+							<option value="05:15 pm">05:15 pm</option>
+							<option value="05:30 pm">05:30 pm</option>
+							<option value="05:45 pm">05:45 pm</option>
+							<option value="06:00 pm">06:00 pm</option>
+							<option value="06:15 pm">06:15 pm</option>
+							<option value="06:30 pm">06:30 pm</option>
+							<option value="06:45 pm">06:45 pm</option>
+							<option value="07:00 pm">07:00 pm</option>
+							<option value="07:15 pm">07:15 pm</option>
+							<option value="07:30 pm">07:30 pm</option>
+							<option value="07:45 pm">07:45 pm</option>
+							<option value="08:00 pm">08:00 pm</option>
+							<option value="08:15 pm">08:15 pm</option>
+							<option value="08:30 pm">08:30 pm</option>
+							<option value="08:45 pm">08:45 pm</option>
+						</select></li>
+							<li name="building" class="friday" value="friday">
+								<select>
+									<option value="">---</option>
+									<option value="cinema 1">Cinema 1</option>
+									<option value="handasaim">Operational Engineering 2</option>
+									<option value="library">Library 3</option>
+									<option value="student_house">Students House 4</option>
+									<option value="mechinot">Pre Academic 6</option>
+									<option value="academia8">Academic House 8</option>
+									<option value="academia9">Academic House 9</option>
+									<option value="academia10">Academic House 10</option>
+									<option value="academia11">Academic House 11</option>
+									<option value="academia12">Academic House 12</option>
+									<option value="saptech15">Externa Studies 15</option>
+								</select></li>
+						</ul>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>
