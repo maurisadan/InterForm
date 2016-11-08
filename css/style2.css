@@ -19,17 +19,21 @@ body
 	list-style: none;
 	padding-top: 3px;
 }
-.sunday, .monday, .tuesday, .wednesday, .thursday, .friday
+.sunday li, .monday li, .tuesday li, .wednesday li, .thursday li, .friday li
 {
 	display: inline;
 	padding-right: 100px;
 	height: 30px;
+	list-style: none;
 }
 
+.sunday, .monday, .tuesday, .wednesday, .thursday, .friday{
+	visibility: hidden;
+}
 .hiddy
 {
 	visibility: hidden;
 }
 .unhiddy{
-	visibility: show;
+	visibility: visible;
 }
