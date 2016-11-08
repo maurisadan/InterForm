@@ -1,4 +1,12 @@
-var daychecked = document.getElementsByClassName('weekday');
+$(function () {
+	'use strict';
+	$('#weekdays2').click(function(){
+		$('.monday').toggle(this, 'style:visible');
+	})
+});
+	
+
+/*var daychecked = document.getElementsByClassName('weekday');
 function OnChangeCheckbox() {
 	for (var i = 0; i<daychecked.length; i++) {
 		if(daychecked[i].checked === true) {
@@ -7,7 +15,7 @@ function OnChangeCheckbox() {
 			$(thisDay).css('visibility','visible');
 		}
 	}
-}
+}*/
 
 /*var daychecked = document.getElementsByClassName('weekday');
 function OnChangeCheckbox() {
