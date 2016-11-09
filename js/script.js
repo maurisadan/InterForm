@@ -1,15 +1,12 @@
 $(function () {
 	'use strict';
-	for (i=0; i<'.weekday'.length; i++) {
-	$('.weekday'[i]).on('change', function dayClick()
-		var $dayChoose = $('.weekday')[$i];
-		if ($dayChoose.prop('checked') === true) {
-			var $day = $dayChoose.value;
-			($day).css('visibility', 'visible');
+	$('#weekday1').on('change', function dayClick() {
+		if ($('#weekday1').prop('checked') === true) {
+			$('.sunday').css('visibility', 'visible');
 			} else {	
-			($day).css('visibility', 'hidden');
+			$('.sunday').css('visibility', 'hidden');
 			}
-	)}
+	})
 })
 
 	
