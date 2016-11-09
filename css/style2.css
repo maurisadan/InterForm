@@ -1,0 +1,36 @@
+@CHARSET "utf-8";
+@font-face {
+    font-family: Arial;
+}
+body
+{
+	width:	100%;
+	margin: 0 auto;
+	font-family: Arial;
+}
+/*input .weekday
+{
+	height: 30px;
+}*/
+
+#daysofweek li
+{
+	height: 32px;
+	list-style: none;
+	padding-top: 3px;
+}
+.sunday li, .monday li, .tuesday li, .wednesday li, .thursday li, .friday li
+{
+	display: inline;
+	padding-right: 100px;
+	height: 30px;
+	list-style: none;
+}
+
+.sunday, .monday, .tuesday, .wednesday, .thursday, .friday
+{
+	visibility: hidden;
+}
+.unhiddy{
+	visibility: visible;
+}
