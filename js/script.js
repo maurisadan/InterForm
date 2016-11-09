@@ -1,9 +1,17 @@
 $(function () {
 	'use strict';
-	$('#weekdays2').click(function(){
-		$('.monday').toggle(this, 'style:visible');
-	})
-});
+	for (i=0; i<'.weekday'.length; i++) {
+	$('.weekday'[i]).on('change', function dayClick()
+		var $dayChoose = $('.weekday')[$i];
+		if ($dayChoose.prop('checked') === true) {
+			var $day = $dayChoose.value;
+			($day).css('visibility', 'visible');
+			} else {	
+			($day).css('visibility', 'hidden');
+			}
+	)}
+})
+
 	
 
 /*var daychecked = document.getElementsByClassName('weekday');

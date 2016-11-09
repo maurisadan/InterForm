@@ -13,7 +13,7 @@ body
 	height: 30px;
 }*/
 
-.weekdays
+#daysofweek li
 {
 	height: 32px;
 	list-style: none;
@@ -27,10 +27,7 @@ body
 	list-style: none;
 }
 
-.sunday, .monday, .tuesday, .wednesday, .thursday, .friday{
-	visibility: hidden;
-}
-.hiddy
+.sunday, .monday, .tuesday, .wednesday, .thursday, .friday
 {
 	visibility: hidden;
 }
